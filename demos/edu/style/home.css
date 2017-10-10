@@ -1,0 +1,256 @@
+/**
+ * time 2017年10月10日
+ * author G
+ */
+@charset "utf-8";
+/* base */
+body {
+  color: #666;
+  font: 12px microsoft yahei,SimSun,Arial,Helvetica,sans-serif; }
+
+body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre, form, fieldset, legend, input, button, textarea, hr {
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+  font-family:  "microsoft yahei";}
+
+address, caption, cite, code, dfn, em, i, th, var, h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-style: normal;
+  font-weight: normal; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+ul, ol, li {
+  list-style: none outside none; }
+
+fieldset, img {
+  border: 0; }
+
+table, td, input, textarea {
+  font-size: 14px; }
+
+textarea {
+  padding: 5px;
+  font-family: 微软雅黑;
+  resize: none; }
+
+input[type="text"], input[type="submit"], input[type="button"] {
+  font-family: 微软雅黑; }
+
+input, button, select, textarea, body a {
+  outline: none; }
+a {
+	text-decoration: none;
+	color: #fff;
+	transition: all .3s;
+}
+
+/* home */
+/* swiper */
+.banner {
+	position: relative;
+	overflow: hidden;
+	min-width: 1100px;
+}
+.banner .swiper-slide img {
+	min-width: 1100px;
+	width: 100%;
+}
+.banner .swiper-container {
+    width: 100%;
+	max-height: 800px;
+} 
+.banner .swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+}
+.banner .banner-span {
+	width: 100%;
+	bottom: 50px;
+}
+.banner .banner-span .swiper-pagination-bullet {
+	display: inline-block;
+	margin-right: 15px;
+	width: 17px;
+	height: 17px;
+	cursor: pointer;
+	background: url(../images/css_sprites.png) -10px -10px no-repeat;
+}
+.banner .banner-span .swiper-pagination-bullet-active {
+	background-position: -128px -10px;
+	width: 45px;
+	height: 17px;
+	border-radius: 0;
+}
+.banner .a-img {
+	position: absolute;
+	bottom: 130px;
+	left: 50%;
+	margin-left: -70px;
+	display: inline-block;
+	background-color: rgba(250, 190, 0, .6);
+	padding: 15px 35px;
+	border-radius: 30px;
+	color: #fff;
+}
+.banner a.a-img:hover {
+	background-color: rgba(250, 190, 0, .8);
+}
+/* nav */
+.main-nav {
+	position: absolute;
+	top: 25px;
+	left: 50%;
+	width: 1050px;
+	margin-left: -525px;
+	z-index: 100;
+}
+.main-nav .phone {
+	text-align: right;
+	font-size: 14px;
+	color: #dddcdc;
+}
+.main-nav .phone span {
+	padding-right: 20px;
+	border-right: 1px solid #dddcdc;
+	margin-right: 20px;
+}
+.main-nav .content-nav {
+	font-size: 0;
+	text-align: right;
+}
+.main-nav .content-nav h1 {
+	float: left;
+}
+.main-nav .content-nav ul {
+	padding-top: 35px;
+}
+.main-nav .content-nav li {
+	display: inline-block;
+	padding: 25px;
+	font-size: 18px;
+	color: #dddcdc; 
+}
+.main-nav .content-nav li:last-child {
+	padding-right: 10px;
+}
+.main-nav .content-nav li a {
+	color: #dddcdc; 
+}
+.main-nav .content-nav li a:hover {
+	color: #fff;
+}
+.main-nav .content-nav li a.active {
+	color: #fff;
+}
+.wrapper .icon {
+	display: inline-block;
+	vertical-align: middle;
+	width: 21px;
+	height: 17px;
+	background: url(../images/css_sprites.png) no-repeat;
+}
+.wrapper .weibo {
+	background-position: -48px -10px;
+}
+.wrapper .weixin {
+	background-position: -87px -10px;
+	margin-left: 10px;
+}
+/* 师资介绍 */
+.wrapper-1 {
+	background-color: #fff;
+	min-width: 1100px;
+}
+.wrapper-2 {
+	background-color: #F3F3F3;
+	min-width: 1100px;
+}
+.wrapper .container {
+	width: 1100px;
+	margin: 0 auto;
+}
+.container .student-list {
+	font-size: 0;
+	padding: 80px 0 60px;
+}
+.container .student-list li {
+	display: inline-block;
+	text-align: center;
+	width: 25%;
+}
+.container .student-list li p {
+	font-size: 22px;
+}
+.container .student-list li .num {
+	font-size: 36px;
+	color: #3B3B3B;
+	margin-bottom: 15px;
+}
+/* 师资介绍 */
+.teaher-container {
+	padding: 35px 70px;
+	color: #000000;
+}
+.teaher-container .title {
+	padding-bottom: 20px;
+	font-size: 30px;
+	text-align: center;
+}
+.teaher-container .text {
+	font-size: 20px;
+	line-height: 1.7;
+	text-indent: 2em;
+}
+.teaher-swiper {
+	padding: 20px 0 130px;
+	width: 100%;
+}
+.teaher-swiper .teaher-box {
+	text-align: center;
+	display: inline-block;
+}
+
+.teaher-swiper .teaher-box img {
+	width: 255px;
+	height: 255px;
+	border-radius: 5px;
+	border: 2px solid #fff;
+}
+.teaher-swiper .teaher-box .name {
+	color: #2b2c6c;
+	font-size: 15px;
+	padding-bottom: 10px;
+	transition: all .3s;
+}
+.teaher-swiper .teaher-box a:hover .name, .teaher-swiper .teaher-box.active .name {
+	background-color: #FFD737;
+	color: #fff;
+	margin-top: -1px;
+}
+.teaher-swiper .teaher-box a:hover img {
+	border-bottom: none;
+}
+.teaher-swiper .teaher-box .name p:first-child {
+	font-size: 20px;
+	padding-bottom: 10px;
+	padding-top: 5px;
+}
+.teaher-swiper .teaher-span {
+	width: 100%;
+	bottom: 75px;
+}
+.teaher-swiper .teaher-span .swiper-pagination-bullet {
+	width: 30px;
+	height: 4px;
+	background-color: #808080;
+	border-radius: 0;
+	opacity: 1;
+}
+.teaher-swiper .teaher-span .swiper-pagination-bullet-active {
+	background-color: #C1C1C1;
+}
