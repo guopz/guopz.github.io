@@ -217,23 +217,25 @@ a {
 .teaher-swiper .teaher-box .img {
 	width: 255px;
 	height: 255px;
+	border: 2px solid #fff;
+	border-radius: 5px;
 }
 .teaher-swiper .teaher-box img {
 	width: 255px;
 	height: 255px;
-	border-radius: 5px;
-	border: 2px solid #fff;
+	display: block;
 }
 .teaher-swiper .teaher-box .name {
 	color: #2b2c6c;
 	font-size: 15px;
 	padding-bottom: 10px;
 	transition: all .3s;
+	border: 2px solid #fff;
 }
 .teaher-swiper .teaher-box a:hover .name, .teaher-swiper .teaher-box.active .name {
 	background-color: #FFD737;
 	color: #fff;
-	margin-top: -1px;
+	margin-top: -4px;
 }
 .teaher-swiper .teaher-box a:hover img {
 	border-bottom: none;
