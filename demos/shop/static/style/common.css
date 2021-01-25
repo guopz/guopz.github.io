@@ -197,6 +197,137 @@ a:hover {
   position: absolute;
   z-index: 10;
 }
+.m-hover-menu {
+  display: inline-block;
+}
+.m-hover-menu:hover .m-change-city-list {
+  display: block;
+}
+.m-change-city-list {
+  display: none;
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  min-width: 400px;
+  max-width: 900px;
+  z-index: 10;
+  font-size: 14px;
+  color: #999;
+  line-height: 24px;
+  background: transparent;
+}
+.m-change-city-list .setwidth {
+  height: 0;
+  opacity: 0;
+  padding: 0 45px 0 65px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.m-change-city-list .boxpd {
+  position: relative;
+  padding-top: 12px;
+}
+.m-change-city-list .boxpd .box {
+  padding: 15px 0 5px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 6px 0 rgb(0 0 0%);
+  background: #fff;
+}
+.m-change-city-list .boxpd .box .content {
+  padding: 10px 20px;
+}
+.m-change-city-list .boxpd .box .content .tit {
+  margin-bottom: 20px;
+}
+.m-change-city-list .boxpd .box li {
+  float: left;
+}
+.m-change-city-list .boxpd .box li a {
+  display: block;
+  position: relative;
+  font-size: 11px;
+  padding: 0 20px;
+  border: 1px solid #eaeaea;
+  border-radius: 3px;
+  margin: 0 15px 15px 0;
+}
+.m-change-city-list .boxpd .box li a s {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+.m-change-city-list .boxpd .box li a s img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.m-change-city-list .boxpd .box li a:hover s {
+  display: block;
+}
+.m-change-city-list .sj {
+  position: absolute;
+  left: 22px;
+  top: -7px;
+  display: block;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-bottom-color: #ddd;
+}
+.m-change-city-list .sj i {
+  position: absolute;
+  left: -9px;
+  top: -7px;
+  display: block;
+  width: 0;
+  height: 0;
+  border: 9px solid transparent;
+  border-bottom-color: #fff;
+}
+.pop {
+  display: none;
+  position: absolute;
+  left: -38px;
+  top: 34px;
+  width: 170px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #ccc;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  padding: 10px 0;
+  -moz-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
+  color: #101010;
+  font-size: 14px;
+  -webkit-animation: topFadeIn 0.3s ease-out;
+  -moz-animation: topFadeIn 0.3s ease-out;
+  animation: topFadeIn 0.3s ease-out;
+}
+.pop s {
+  position: absolute;
+  top: -8px;
+  left: 80px;
+  width: 16px;
+  height: 9px;
+  background: url('../images/icons.png') -10px -591px;
+}
+.pop p {
+  line-height: 20px;
+}
+.pop p a {
+  padding: 0;
+  background: none;
+}
+.pop p a img {
+  display: block;
+  margin: 0 auto;
+}
 /* 从下往上缓冲显示 */
 @-webkit-keyframes bottomFadeIn {
   0% {
