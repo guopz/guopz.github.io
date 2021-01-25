@@ -1,0 +1,566 @@
+// 基础通用样式
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+p,
+ul,
+li,
+h1,
+h2,
+h3 {
+    list-style: none;
+    margin    : 0;
+    padding   : 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+body {
+    background-color: #EDF0F2;
+}
+
+
+a {
+    color          : #333;
+    text-decoration: none;
+
+    &:hover {
+        color          : #2babff;
+        text-decoration: none;
+    }
+}
+
+.u-fs14 {
+    font-size: 14px;
+}
+
+.u-c99 {
+    color: #990000;
+}
+
+.w-1200 {
+    margin: auto;
+    width : 1200px;
+}
+
+.aicon {
+    width         : 1.3em;
+    height        : 1.3em;
+    vertical-align: -0.15em;
+    fill          : currentColor;
+    overflow      : hidden;
+}
+
+.ubicon {
+    background-image : url(../images/public_icons.png);
+    background-repeat: no-repeat;
+}
+
+.udown {
+    margin-left        : 5px;
+    display            : inline-block;
+    vertical-align     : middle;
+    width              : 8px;
+    height             : 5px;
+    transition         : all .3s;
+    background-position: -2px -85px;
+}
+
+.ub-linear {
+    background: -webkit-linear-gradient(left, #f47517, #f49e17) !important;
+    background: -o-linear-gradient(right, #f47517, #f49e17) !important;
+    background: -moz-linear-gradient(right, #f47517, #f49e17) !important;
+    background: linear-gradient(to right, #f47517, #f49e17) !important;
+    filter    : progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr=#f47517, endColorstr=#f49e17);
+}
+
+.clearfix:after {
+    content    : "";
+    /*设置内容为空*/
+    height     : 0;
+    /*高度为0*/
+    line-height: 0;
+    /*行高为0*/
+    display    : block;
+    /*将文本转为块级元素*/
+    visibility : hidden;
+    /*将元素隐藏*/
+    clear      : both;
+    /*清除浮动*/
+}
+
+.clearfix {
+    zoom: 1;
+    /*为了兼容IE*/
+}
+
+.p-t20 {
+    margin-top: 20px;
+}
+
+.m-t15 {
+    margin-top: 15px;
+}
+
+.u-bgf {
+    background-color: #fff;
+}
+
+.u-pr {
+    position: relative;
+}
+
+.u-fl {
+    float: left;
+}
+
+.u-fr {
+    float: right;
+}
+
+.ellipsis {
+    white-space  : nowrap;
+    text-overflow: ellipsis;
+    overflow     : hidden;
+    word-break   : break-all;
+}
+.triangle-down {
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #666;
+}
+
+// 滚动外部
+.m-scroll-jq {
+    width      : 90%;
+    position   : relative;
+    white-space: nowrap;
+    overflow   : hidden;
+    height     : 25px;
+}
+
+// 倒计时
+.countDownBox {
+    position: absolute;
+    z-index : 2;
+    bottom  : 20px;
+    left    : 13px;
+
+    span {
+        display     : inline-block;
+        width       : 40px;
+        height      : 40px;
+        background  : #202121;
+        text-align  : center;
+        line-height : 40px;
+        margin-right: 5px;
+    }
+}
+
+.countDown {
+    position: absolute;
+    z-index : 4;
+    bottom  : 24px;
+    left    : 13px;
+
+    span {
+        display     : inline-block;
+        width       : 37px;
+        height      : 40px;
+        font-size   : 22px;
+        color       : #fff;
+        font-weight : bold;
+        text-align  : center;
+        line-height : 40px;
+        margin-right: 5px
+    }
+}
+
+// swipper
+.JQ_swiper {
+    overflow: hidden;
+}
+
+.cus-pagination {
+    .swiper-pagination-bullet {
+        cursor       : pointer;
+        display      : inline-block;
+        width        : 30px;
+        height       : 4px;
+        background   : rgba(255, 255, 255, 0.5);
+        margin       : 0 5px;
+        text-align   : center;
+        border-radius: 0;
+        opacity      : 1;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: #f8355b
+    }
+}
+
+.cus-pagination-2 {
+    .swiper-pagination-bullet-active {
+        width                : 19px;
+        background           : #f8355b;
+        -moz-border-radius   : 4px;
+        -webkit-border-radius: 4px;
+        border-radius        : 4px;
+    }
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    position  : absolute;
+    bottom    : 10px;
+    left      : 0;
+    width     : 100%;
+    text-align: center;
+    z-index : 10;
+}
+
+.swiper-pagination-bullet-active {
+    margin: 0 3px !important;
+    background-color: #f8355b;
+}
+
+.swiper_pag {
+    bottom  : 14px !important;
+    position: absolute;
+    z-index : 10;
+}
+
+
+
+/* 从下往上缓冲显示 */
+@-webkit-keyframes bottomFadeIn {
+    0% {
+        opacity          : 0;
+        -webkit-transform: translateY(10px);
+    }
+
+    100% {
+        opacity          : 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+@-moz-keyframes bottomFadeIn {
+    0% {
+        opacity       : 0;
+        -moz-transform: translateY(10px);
+    }
+
+    100% {
+        opacity       : 1;
+        -moz-transform: translateY(0);
+    }
+}
+
+@keyframes bottomFadeIn {
+    0% {
+        opacity  : 0;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity  : 1;
+        transform: translateY(0);
+    }
+}
+
+/* 从上往下缓冲显示 */
+@-webkit-keyframes topFadeIn {
+    0% {
+        opacity          : 0;
+        -webkit-transform: translateY(-10px);
+    }
+
+    100% {
+        opacity          : 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+@-moz-keyframes topFadeIn {
+    0% {
+        opacity       : 0;
+        -moz-transform: translateY(-10px);
+    }
+
+    100% {
+        opacity       : 1;
+        -moz-transform: translateY(0);
+    }
+}
+
+@keyframes topFadeIn {
+    0% {
+        opacity  : 0;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity  : 1;
+        transform: translateY(0);
+    }
+}
+
+/* 从左往右缓冲显示 */
+@-webkit-keyframes leftFadeIn {
+    0% {
+        opacity          : 0;
+        -webkit-transform: translateX(-10px);
+    }
+
+    100% {
+        opacity          : 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+@-moz-keyframes leftFadeIn {
+    0% {
+        opacity       : 0;
+        -moz-transform: translateX(-10px);
+    }
+
+    100% {
+        opacity       : 1;
+        -moz-transform: translateY(0);
+    }
+}
+
+@keyframes leftFadeIn {
+    0% {
+        opacity  : 0;
+        transform: translateX(-10px);
+    }
+
+    100% {
+        opacity  : 1;
+        transform: translateY(0);
+    }
+}
+
+/* 从右往左缓冲显示 */
+@-webkit-keyframes rightFadeIn {
+    0% {
+        opacity          : 0;
+        -webkit-transform: translateX(10px);
+    }
+
+    100% {
+        opacity          : 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+@-moz-keyframes rightFadeIn {
+    0% {
+        opacity       : 0;
+        -moz-transform: translateX(10px);
+    }
+
+    100% {
+        opacity       : 1;
+        -moz-transform: translateY(0);
+    }
+}
+
+@keyframes rightFadeIn {
+    0% {
+        opacity  : 0;
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity  : 1;
+        transform: translateY(0);
+    }
+}
+
+/* 膨胀后变正常尺寸 */
+@-webkit-keyframes popup {
+    0% {
+        -webkit-transform: scale(0);
+    }
+
+    60% {
+        -webkit-transform: scale(1.1);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+    }
+}
+
+@-moz-keyframes popup {
+    0% {
+        -moz-transform: scale(0);
+    }
+
+    60% {
+        -moz-transform: scale(1.1);
+    }
+
+    100% {
+        -moz-transform: scale(1);
+    }
+}
+
+@keyframes popup {
+    0% {
+        transform: scale(0);
+    }
+
+    60% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* X轴翻动 */
+@keyframes flipInX {
+    0% {
+        transform: perspective(400px) rotateX(90deg);
+        opacity  : 0
+    }
+
+    40% {
+        transform: perspective(400px) rotateX(-10deg)
+    }
+
+    70% {
+        transform: perspective(400px) rotateX(10deg)
+    }
+
+    100% {
+        transform: perspective(400px) rotateX(0deg);
+        opacity  : 1
+    }
+}
+
+@-webkit-keyframes flipInX {
+    0% {
+        -webkit-transform: perspective(400px) rotateX(90deg);
+        opacity          : 0
+    }
+
+    40% {
+        -webkit-transform: perspective(400px) rotateX(-10deg)
+    }
+
+    70% {
+        -webkit-transform: perspective(400px) rotateX(10deg)
+    }
+
+    100% {
+        -webkit-transform: perspective(400px) rotateX(0deg);
+        opacity          : 1
+    }
+}
+
+@-moz-keyframes flipInX {
+    0% {
+        -moz-transform: perspective(400px) rotateX(90deg);
+        opacity       : 0
+    }
+
+    40% {
+        -moz-transform: perspective(400px) rotateX(-10deg)
+    }
+
+    70% {
+        -moz-transform: perspective(400px) rotateX(10deg)
+    }
+
+    100% {
+        -moz-transform: perspective(400px) rotateX(0deg);
+        opacity       : 1
+    }
+}
+
+/* Y轴翻动 */
+@keyframes flipInY {
+    0% {
+        transform: perspective(400px) rotateY(90deg);
+        opacity  : 0
+    }
+
+    40% {
+        transform: perspective(400px) rotateY(-10deg)
+    }
+
+    70% {
+        transform: perspective(400px) rotateY(10deg)
+    }
+
+    100% {
+        transform: perspective(400px) rotateY(0deg);
+        opacity  : 1
+    }
+}
+
+@-webkit-keyframes flipInY {
+    0% {
+        -webkit-transform: perspective(400px) rotateY(90deg);
+        opacity          : 0
+    }
+
+    40% {
+        -webkit-transform: perspective(400px) rotateY(-10deg)
+    }
+
+    70% {
+        -webkit-transform: perspective(400px) rotateY(10deg)
+    }
+
+    100% {
+        -webkit-transform: perspective(400px) rotateY(0deg);
+        opacity          : 1
+    }
+}
+
+@-moz-keyframes flipInY {
+    0% {
+        -moz-transform: perspective(400px) rotateY(90deg);
+        opacity       : 0
+    }
+
+    40% {
+        -moz-transform: perspective(400px) rotateY(-10deg)
+    }
+
+    70% {
+        -moz-transform: perspective(400px) rotateY(10deg)
+    }
+
+    100% {
+        -moz-transform: perspective(400px) rotateY(0deg);
+        opacity       : 1
+    }
+}
+
+@-webkit-keyframes move {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: -500px;
+    }
+}
